@@ -1,0 +1,26 @@
+<!--<div class="center jumbotron">-->
+<div class="middle">
+<%= image_tag "partly_cloudly.png", :size => "120x100" %> <span class="temp"><%= @current_weather.temperature %> °F</span>
+  <div class="arial"> <%= @current_weather.summary %></div>
+    <div class="container1">
+      <span class="weather_label">Wind:</span>
+      <span class="weather_value"><%= @current_weather.windSpeed %> mph</span>
+
+      <span class="pressure">
+        <span class="weather_label">Pressure:</span>
+        <span class="weather_value"><%= @current_weather.pressure %> mb</span>
+        </span>
+
+      <span class="humidity">
+        <span class="weather_label">Humidity:</span>
+        <span class="weather_value"><%= @current_weather.humidity * 100 %> %</span>
+        </span>
+
+      <span class="visibility">
+        <span class="weather_label">Visibility:</span>
+        <span class="weather_value"><%= @current_weather.visibility %> km</span>
+        </span>
+    </div>
+</div>
+<hr>
+<h1>Available Drones</h1>

@@ -1,0 +1,20 @@
+/*pointer hover*/
+
+.pointer {
+  cursor: pointer;
+
+  &:hover {
+    color: blue;
+  }
+}
+
+/*date and day*/
+
+.date {
+  font-size: 27px;
+  margin-left: 53px;
+}
+
+.day {
+  margin-left: 70px;
+}
