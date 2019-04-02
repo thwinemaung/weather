@@ -17,7 +17,7 @@
         for (i = 1; i <= detail_no.length; i++) {
             if (i === number) {
                 var btn = document.getElementById(`btn${i}`);
-                btn.style.color = "blue";
+                btn.style.color = "lightslategray";
                 continue;
             }
             else {
@@ -33,7 +33,7 @@
 </script>
 <body>
 
-
+<div class="font_type">
 <table>
   <tr>
     <% b = 1 %>
@@ -46,26 +46,34 @@
     <% end %>
   </tr>
 </table>
-
+<hr>
 <br>
 
 <% a = 1 %>
 <% @daily_weather.each do |day| %>
-  <p id="detail<%= a %>"
+  <p class="text_position" id="detail<%= a %>"
     <% if Time.at(day.time).strftime('%A') == Time.now.strftime('%A') %>
       style="display: block"
     <% else %>
       style="display: none"
     <% end %>
   >
-    <%= day.summary %><br>
-    High: <%= day.apparentTemperatureMax %> | Low: <%= day.apparentTemperatureMin %><br>
-    Windspeed: <%= day.windSpeed %> <%= day.icon %><br>
+
+    <span class="daily_summary"> <%= day.summary %> </span><br>
+    <span class="container1"> High: <%= day.apparentTemperatureMax %> | Low: <%= day.apparentTemperatureMin %><br>
+      Windspeed: <%= day.windSpeed %> </span> <br>
   </p>
 
   <% a = a + 1 %>
 <% end %>
-
+  <% i = 1 %>
+  <%#= Time.now.getlocal('-09:00') %>
+  <% @hourly_weather.each do |hour| %>
+    <%= Time.at(hour.time).strftime("%I:%M %p") %><br>
+  <%= i %>
+    <%= hour.summary %><br>
+    <% i = i + 1 %>
+<% end %></div>
 <br>
 <!--<%#= Time.at(@day.time).strftime('%A') %><br>-->
 

@@ -80,7 +80,7 @@ h2 {
 /* footer */
 
 footer {
-  margin-top: 45px;
+  margin-top: 200px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777;
@@ -113,8 +113,11 @@ footer ul li {
   text-align: center;
 }
 
-.arial {
-  font-family: Arial;
+.font_type {
+  font-family: Times;
+}
+
+.summary {
   margin-top: 7px;
   font-size: 40px;
   font-weight: 500;
@@ -122,12 +125,11 @@ footer ul li {
   white-space: pre-line;
   color: black;
 }
-.container1 {
-  font-family: Arial;
-}
+//.container1 {
+//  font-family: Arial;
+//}
 
 .temp {
-  font-family: Arial;
   margin-left: 10px;
   font-size: 40px;
   font-weight: 500;
@@ -135,17 +137,22 @@ footer ul li {
   color: black;
 }
 
-.weather_value {
+.container1 {
   color: #777;
-  //font-size: 1.1em;
   font-weight: normal;
 }
 
-.weather_label {
-  color: #777;
-  //font-size: 1.1em;
-  font-weight: normal;
-}
+//.weather_value {
+//  color: #777;
+//  //font-size: 1.1em;
+//  font-weight: normal;
+//}
+//
+//.weather_label {
+//  color: #777;
+//  //font-size: 1.1em;
+//  font-weight: normal;
+//}
 
 .pressure {
   margin-left: 30px;
@@ -161,6 +168,54 @@ footer ul li {
 
 .pressure {
   margin-left: 30px;
+}
+
+//.btn {
+  //position: absolute;
+  //top: 50%;
+  //left: 50%;
+  //transform: translate(-50%, -50%);
+  //-ms-transform: translate(-50%, -50%);
+  //background-color: #f1f1f1;
+  //color: white;
+  //background-color: black;
+  //font-size: 16px;
+  //padding: 16px 30px;
+  //border: none;
+  //cursor: pointer;
+  //border-radius: 5px;
+  //text-align: center;
+
+//  &:hover {
+//    background-color: white;
+//    color: black;
+//  }
+//}
+
+.example_e {
+  margin-top: 20px;
+  border: solid;
+  background: #404040;
+  color: #ffffff !important;
+  font-weight: 100;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.example_e:hover {
+  color: #404040 !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
+}
+
+.package_left {
+  margin-right: 200px;
 }
 
 

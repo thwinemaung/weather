@@ -4,7 +4,7 @@
   cursor: pointer;
 
   &:hover {
-    color: blue;
+    color: lightslategray;
   }
 }
 
@@ -12,9 +12,25 @@
 
 .date {
   font-size: 27px;
-  margin-left: 53px;
+  margin-left: 45px;
 }
 
 .day {
-  margin-left: 70px;
+  margin-left: 60px;
+}
+
+.text_position {
+  text-align: center;
+  margin-top: 2px;
+  //font-size: 35px;
+  //font-weight: 500;
+  //line-height: 1.7em;
+  //white-space: pre-line;
+  //color: black;
+}
+
+.daily_summary {
+  font-size: 25px;
+  font-weight: 300;
+  color: black;
 }
