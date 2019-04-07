@@ -1,35 +1,34 @@
 <!--<div class="center jumbotron">-->
-<!--<div class="font_type">-->
-<!--  <div class="middle">-->
-<!--<%#= image_tag "partly_cloudly.png", :size => "120x100" %> <span class="temp"><%#= @current_weather.temperature %> °F</span>-->
-<!--    <div class="summary"> <%#= @current_weather.summary %></div>-->
-<!--      <div class="container1">-->
-<!--        Wind:-->
-<!--        <%#= @current_weather.windSpeed %> mph-->
+<div class="font_type">
+  <div class="middle">
+<%= image_tag "partly_cloudly.png", :size => "120x100" %> <span class="temp"><%= @current_weather.temperature %> °F</span>
+    <div class="summary"> <%= @current_weather.summary %></div>
+      <div class="container1">
+        Wind:
+        <%= @current_weather.windSpeed %> mph
 
-<!--        <span class="pressure">-->
-<!--          Pressure:-->
-<!--          <%#= @current_weather.pressure %> mb-->
-<!--        </span>-->
+        <span class="pressure">
+          Pressure:
+          <%= @current_weather.pressure %> mb
+        </span>
 
-<!--        <span class="humidity">-->
-<!--          Humidity:-->
-<!--          <%#= @current_weather.humidity * 100 %> %-->
-<!--        </span>-->
+        <span class="humidity">
+          Humidity:
+          <%= @current_weather.humidity * 100 %> %
+        </span>
 
-<!--        <span class="visibility">-->
-<!--          Visibility:-->
-<!--          <%#= @current_weather.visibility %> km-->
-<!--        </span>-->
-<!--      </div>-->
-<!--      <hr>-->
-<!--      <h1 class="mission">Choose Mission</h1>-->
-<!--  </div>-->
-<!--</div>-->
-<!--<div class="button_cont" align="center">-->
-<!--  <span class="package_left"> <a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">package delivery</a>-->
-<!--    </span>-->
-<!--  <span class="farm_right"> <a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">farm observation</a>-->
-<!--  </span>-->
-<!--</div>-->
-heroku app working
+        <span class="visibility">
+          Visibility:
+          <%= @current_weather.visibility %> km
+        </span>
+      </div>
+      <hr>
+      <h1 class="mission">Choose Mission</h1>
+  </div>
+</div>
+<div class="button_cont" align="center">
+  <span class="package_left"> <a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">package delivery</a>
+    </span>
+  <span class="farm_right"> <a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">farm observation</a>
+  </span>
+</div>
